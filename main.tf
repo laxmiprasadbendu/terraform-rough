@@ -1,15 +1,15 @@
 provider "aws" {
   region  = "us-east-1"
-  version = "2.3.0"
+  
   access_key = "AKIAYH5NRM4UZBY6FZOD"
   secret_key = "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"
 }
 
 module "eks_k8s1" {
   source  = "terraform-aws-modules/eks/aws"
-  version = "2.3.1"
+  
 
-  cluster_version = "1.12"
+  
 
   cluster_name = "k8s"
   Vpc_id = "vpc-00000000"
